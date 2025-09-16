@@ -59,7 +59,7 @@ stdErr = sqrt(diag(covBetaHat))
 # (see http://www.stat.yale.edu/Courses/1997-98/101/confint.htm)
 # the number can be retrieved by qnorm(1 - (1-0.95)/2)
 # So the interval is (betaHat-1.96*stdErr, betaHat+1.96*stdErr)
-confInterval = r(betaHat-1.96*stdErr, betaHat+1.96*stdErr)
+confInterval = c(betaHat-1.96*stdErr, betaHat+1.96*stdErr)
 confInterval
 
 
